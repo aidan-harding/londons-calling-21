@@ -1,0 +1,14 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "50.0",
+  "packageAliases": {
+    "Nebula Core": "04t6M000000km0ZQAQ"
+  }
+}

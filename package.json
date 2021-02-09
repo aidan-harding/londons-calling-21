@@ -1,0 +1,21 @@
+{
+  "name": "londons-calling-21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:unit",
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:watch": "sfdx-lwc-jest --watch",
+    "test:unit:debug": "sfdx-lwc-jest --debug",
+    "test:unit:coverage": "sfdx-lwc-jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@salesforce/sfdx-lwc-jest": "^0.11.0"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.20"
+  }
+}
