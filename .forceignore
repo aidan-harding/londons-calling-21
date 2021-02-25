@@ -3,10 +3,18 @@
 #
 
 package.xml
+**/*profile-meta.xml
 
 # LWC configuration files
 **/jsconfig.json
 **/.eslintrc.json
+
+# sfdx is currently buggy, so stuck on an old version where I need to exclude these
+ProductServiceCampaignItem.My_RecentProductServiceCampaignItems
+ShiftTemplate.My_RecentShiftTemplates
+ProductServiceCampaignItem.All_ProductServiceCampaignItems
+ShiftTemplate.My_ShiftTemplates
+ShiftTemplate.All_ShiftTemplates
 
 # LWC Jest
 **/__tests__/**

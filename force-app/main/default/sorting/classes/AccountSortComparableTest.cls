@@ -7,11 +7,11 @@
 private class AccountSortComparableTest {
 
     static List<Account> accounts = new List<Account> {
-            new Account(ShippingStreet = '4'),
-            new Account(ShippingStreet = '1'),
-            new Account(ShippingStreet = '2'),
-            new Account(ShippingStreet = '0'),
-            new Account(ShippingStreet = '3')
+            new Account(ShippingStreet = '4', ShippingCity = 'Zero-index Town'),
+            new Account(ShippingStreet = '1', ShippingCity = 'Zero-index Town'),
+            new Account(ShippingStreet = '2', ShippingCity = 'Zero-index Town'),
+            new Account(ShippingStreet = '0', ShippingCity = 'Zero-index Town'),
+            new Account(ShippingStreet = '3', ShippingCity = 'Zero-index Town')
     };
 
     @IsTest

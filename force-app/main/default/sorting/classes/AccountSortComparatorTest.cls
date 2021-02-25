@@ -16,7 +16,6 @@ private class AccountSortComparatorTest {
 
     @IsTest
     static void sort() {
-
         nebc.Lists.sort(accounts, new SObjectComparator(Account.ShippingStreet));
 
         for(Integer i=0; i < accounts.size(); i++) {

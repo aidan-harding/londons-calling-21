@@ -1,18 +1,26 @@
-# Salesforce DX Project: Next Steps
+# What Flow And Javascript Can Teach You About Apex
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Code examples from London's Calling 2021 presentation with the title above. I will link to the recording when that is 
+available.
 
-## How Do You Plan to Deploy Your Changes?
+## Setup
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Requires installation of Nebula Core (aliased in the project file):
 
-## Configure Your Salesforce DX Project
+    sfdx force:package:install --wait 20 --package "Nebula Core"
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Content
 
-## Read All About It
+### Sorting
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+ - [AccountSortComparableTest](force-app/main/default/sorting/classes/AccountSortComparableTest.cls) - Apex sorting using Comparable interface
+ - [sortAccount.test.js](force-app/main/default/sorting/jest/__tests__/sortAccount.test.js) - Javascript sorting 
+ - [AccountSortComparatorTest](force-app/main/default/sorting/classes/AccountSortComparatorTest.cls) - Apex sorting using Comparator
+
+### Account Classification
+
+ - [AccountRatingTest](force-app/main/default/rating/classes/AccountRatingTest.cls) - tests for all implementations
+ - [AccountBiotechnologyRating](force-app/main/default/rating/classes/AccountBiotechnologyRating.cls) - standard Apex implementation  
+ - [AccountChemicalsRating](force-app/main/default/rating/classes/AccountChemicalsRating.cls) - Apex iterator implementations 
+ - [AccountTechnologyRating](force-app/main/default/rating/flows/AccountTechnologyRating.flow-meta.xml) - Flow implementation
+ - [classifyAccount.test.js](force-app/main/default/rating/jest/__tests__/classifyAccount.test.js) - Javascript implementation
